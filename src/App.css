@@ -1,0 +1,44 @@
+/* src/App.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  @apply flex flex-col items-center;
+}
+
+.video-link-input input {
+  @apply flex-1 p-2 border rounded;
+}
+
+.video-link-input button {
+  @apply ml-2 p-2 bg-blue-500 text-white rounded;
+}
+
+.notes-section {
+  @apply w-full max-w-xl mt-6;
+}
+
+.notes-section h2 {
+  @apply text-xl font-bold mb-4;
+}
+
+.notes-section ul {
+  @apply list-none p-0;
+}
+
+.notes-section li {
+  @apply flex justify-between items-center mb-2;
+}
+
+.notes-section .add-note {
+  @apply mt-4 flex;
+}
+
+.notes-section .add-note input {
+  @apply flex-1 p-2 border rounded;
+}
+
+.notes-section .add-note button {
+  @apply ml-2 p-2 bg-blue-500 text-white rounded;
+}
