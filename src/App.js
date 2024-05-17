@@ -81,15 +81,16 @@ const App = () => {
 
   return (
     <div className="bg-gray-100 min-h-screen p-4">
-      <div className="container mx-auto p-4 bg-white shadow-lg rounded">
+      <div className="container mx-auto p-4 min-h-screen bg-white shadow-lg rounded">
         {showInput ? (
-          <div className="video-link-input flex mb-4">
+          <div className="video-link-input flex flex-col mb-4 items-center justify-items-center mt-[25%]">
+            <h1 className="text-2xl flex font-bold mb-4 justify-items-center text-center">Search for your YouTube video</h1>
             <input
               type="text"
               value={inputLink}
               onChange={(e) => setInputLink(e.target.value)}
               placeholder="Enter YouTube video link"
-              className="flex-1 p-2 border rounded max-w-fit"
+              className="flex-1 p-2 border rounded max-w-fit mb-3"
             />
             <button onClick={handleVideoLinkSubmit} className="ml-2 p-2 bg-blue-500 text-white rounded">Load Video</button>
           </div>
